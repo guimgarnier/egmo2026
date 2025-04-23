@@ -48,15 +48,21 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index_fr.html" class="active">Accueil</a></li>
-          <li><a href="blog-fr.html">Nouvelles</a></li>
+          <li><a href="index_fr.html">Accueil</a></li>
+          <li><a href="blog_fr.html">Nouvelles</a></li>
           <li class="dropdown"><a href="#"><span>Information</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="accommodation_fr.html">Lieux et hébergement</a></li>
               <li><a href="travel_fr.html">Informations de voyage</a></li>
             </ul>
           </li>
-          <li><a href="agenda_fr.html">Programme</a></li>
+          <li class="dropdown"><a href="#"><span>Programme</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="agenda_fr.html">Emploi du temps</a></li>
+              <li><a href="#">Activités</a></li>
+              <li><a href="#">Excursions</a></li>
+            </ul>
+          </li>
           <li class="dropdown"><a href="#"><span>Compétition</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="participation_fr.html">Participation</a></li>
@@ -65,17 +71,10 @@
               <li><a href="problems_fr.html">Problèmes</a></li>
             </ul>
           </li>
-          <li class="dropdown"><a href="#"><span>Activités</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Chasse au trésor</a></li>
-              <li><a href="#">Ateliers</a></li>
-              <li><a href="#">Excursions</a></li>
-            </ul>
-          </li>
           <li class="dropdown"><a href="#"><span>Organisation</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="team_fr.html">L'équipe</a></li>
-              <li><a href="sponsors_fr.html">Soutien et parrainage</a></li>
+              <li><a href="sponsors_fr.html" class="active">Soutien et parrainage</a></li>
             </ul>
           </li>
           <li><a href="contact_fr.html">Contacts</a></li>
@@ -83,12 +82,14 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <div class="header-social-links">  
+      <div class="header-social-links">
+        
         <a href="https://www.facebook.com/profile.php?id=61574934237146"><i class="bi bi-facebook"></i></a>        
         <a href="https://www.instagram.com/egmo2026/" class="instagram"><i class="bi bi-instagram"></i></a>
         <a href="https://www.linkedin.com/company/european-girls-mathematical-olympiad/" class="linkedin"><i class="bi bi-linkedin"></i></a>
       </div>
-<div class="header-social-links">
+
+      <div class="header-social-links">
         &nbsp; &nbsp;
         <a href="index.html">EN</a>
         &nbsp; | 
@@ -103,6 +104,18 @@
     <!-- Clients Section -->
     <section id="clients" class="clients section">
 
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <p>
+          Animath est une association à but non lucratif et toutes les personnes impliquées dans l'organisation de l'EGMO 2026 sont bénévoles. Un projet aussi ambitieux n'est possible que grâce au soutien généreux de nombreux partenaires.
+        </p>
+
+        <p>
+          Votre entreprise, organisation ou fondation serait intéressée pour devenir un de nos soutiens ? Vous trouverez dans <a href="assets/EGMO2026-flyer-FR.pdf">notre brochure</a> plus d'informations sur nos offres de parrainage.
+        </p>
+      </div>
+
+      <br><br><br>
+
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Soutiens publics</h2>
@@ -110,28 +123,29 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row g-0 clients-wrap">
+        <div class="row g-0 clients-wrap" align="center">
 
-<!--          <div class="col-xl-3 col-md-4 client-logo">
+<!--          <div class="col-xl-4 col-md-6 client-logo">
             <img src="assets/img/clients/logo-animath.png" class="img-fluid" alt="">
           </div> 
 -->
 
-          <div class="col-xl-3 col-md-4 client-logo">
-            <img src="assets/img/clients/logo-fondation-blaise-pascal.png" class="img-fluid" alt="">
+          <div class="col-xl-4 col-md-6 client-logo">
+            <img src="assets/img/clients/logo-fondation-blaise-pascal.png" href = "https://www.fondation-blaise-pascal.org/" class="img-fluid" alt="">
           </div><!-- End Client Item -->
 
-          <div class="col-xl-3 col-md-4 client-logo">
-            <img src="assets/img/clients/Universite_Bordeaux_Logo.png" class="img-fluid" alt="">
+          <div class="col-xl-4 col-md-6 client-logo">
+            <img src="assets/img/clients/Universite_Bordeaux_Logo.png" href = "https://www.u-bordeaux.fr/" class="img-fluid" alt="">
           </div><!-- End Client Item -->
 
-          <div class="col-xl-3 col-md-4 client-logo">
-            <img src="assets/img/clients/Ministere-logo.png" class="img-fluid" alt="">
+          <div class="col-xl-4 col-md-6 client-logo">
+            <img src="assets/img/clients/Ministere-logo.png" class="img-fluid" href = "https://www.education.gouv.fr/" alt="">
           </div><!-- End Client Item -->
 
         </div>
 
       </div>
+      <br><br><br>
 
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
@@ -140,21 +154,31 @@
 
         <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row g-0 clients-wrap">
+          <div class="row g-0 clients-wrap" align="center">
 
-        <div class="col-xl-3 col-md-4 client-logo">
-          <img src="assets/img/clients/logo-janestreet.png" class="img-fluid" alt="">
-        </div><!-- End Client Item -->
+            <div class="col-xl-4 col-md-6 client-logo">
+              <img src="assets/img/clients/logo-janestreet.png" class="img-fluid" href = "https://www.janestreet.com/" alt="">
+            </div><!-- End Client Item -->
 
-        <div class="col-xl-3 col-md-4 client-logo">
-          <img src="assets/img/clients/Logo-Mistral-AI.png" class="img-fluid" alt="">
-        </div><!-- End Client Item -->
+            <div class="col-xl-4 col-md-6 client-logo">
+              <img src="assets/img/clients/Logo-Mistral-AI.png" class="img-fluid" href = "https://mistral.ai/fr" alt="">
+            </div><!-- End Client Item -->
 
-        <div class="col-xl-3 col-md-4 client-logo">
-          <img src="assets/img/clients/Qube_Logo.png" class="img-fluid" alt="">
-        </div><!-- End Client Item -->
-
+            <div class="col-xl-4 col-md-6 client-logo">
+              <img src="assets/img/clients/Qube_Logo.png" class="img-fluid" href = "https://www.qube-rt.com/" alt="">
+            </div><!-- End Client Item -->
+          </div>
         </div>
+
+        <br><br><br>
+
+      <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Donateurs</h2>
+        </div><!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <p> Aimeriez-vous contribuer personnellement à rendre l'EGMO 2026 inoubliable ? <a href="https://www.helloasso.com/associations/animath/formulaires/12">Notre campagne de financement participatif est ouverte</a> ! </p>
         </div>
       
     </section><!-- /Clients Section -->

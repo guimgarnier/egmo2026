@@ -48,7 +48,7 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="blog.html">News</a></li>
           <li class="dropdown"><a href="#"><span>Information</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
@@ -56,7 +56,13 @@
               <li><a href="travel.html">Travel information</a></li>
             </ul>
           </li>
-          <li><a href="agenda.html">Agenda</a></li>
+          <li class="dropdown"><a href="#"><span>Programme</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="agenda.html">Timetable</a></li>
+              <li><a href="#">Activities</a></li>
+              <li><a href="#">Excursions</a></li>
+            </ul>
+          </li>
           <li class="dropdown"><a href="#"><span>Competition</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="participation.html">Participation</a></li>
@@ -65,17 +71,10 @@
               <li><a href="problems.html">Problems</a></li>
             </ul>
           </li>
-          <li class="dropdown"><a href="#"><span>Activities</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Treasure hunt</a></li>
-              <li><a href="#">Workshops</a></li>
-              <li><a href="#">Excursions</a></li>
-            </ul>
-          </li>
-          <li class="dropdown"><a href="#"><span>Organization</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="#" class="active"><span>Organization</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="team.html">Organizers</a></li>
-              <li><a href="sponsors.html">Sponsors</a></li>
+              <li><a href="sponsors.html" class="active">Sponsors</a></li>
             </ul>
           </li>
           <li><a href="contact.html">Contacts</a></li>
@@ -92,9 +91,9 @@
 
       <div class="header-social-links">
         &nbsp; &nbsp;
-        <a href="index.html">EN</a>
+        <a href="sponsors.html">EN</a>
         &nbsp; | 
-        <a href="index_fr.html">FR</a>
+        <a href="sponsors_fr.html">FR</a>
       </div>
 
     </div>
@@ -105,6 +104,18 @@
     <!-- Clients Section -->
     <section id="clients" class="clients section">
 
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <p>
+          Animath is a non-profit organization and all the people involved in organizing EGMO 2026 are volunteers. Such an ambitious project is only possible thanks to the generous support of many partners and donors.
+        </p>
+
+        <p>
+          Is your company, organization or foundation interested in becoming a sponsor ? You can find in <a href="assets/flyer-en.pdf">our brochure</a> more information about our sponsorphip packages.
+        </p>
+      </div>
+
+      <br><br><br>
+
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Public supports</h2>
@@ -112,38 +123,32 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <p>
-          Animath is a non-profit organization and all the people involved in organizing EGMO 2025 are volunteers. Such an ambitious project is only possible thanks to the generous support of many partners and donors.
-        </p>
-
-        <p>
-          Is your company, organization or foundation interested in becoming a sponsor ? You can find in our brochure <!-- inclure la bruchure PDF en anglais --> more information about our sponsorphip packages.
-        </p>
-
         <div class="row g-0 clients-wrap">
 <!--
-          <div class="col-xl-3 col-md-4 client-logo">
+          <div class="col-xl-4 col-md-5 client-logo">
             <img src="assets/img/clients/logo-animath.png" class="img-fluid" alt="">
           </div>
 -->
 
           
 
-          <div class="col-xl-3 col-md-4 client-logo">
-            <img src="assets/img/clients/logo-fondation-blaise-pascal.png" class="img-fluid" alt="">
+          <div class="col-xl-4 col-md-5 client-logo">
+            <img src="assets/img/clients/logo-fondation-blaise-pascal.png" href = "https://www.fondation-blaise-pascal.org/" class="img-fluid" alt="">
           </div><!-- End Client Item -->
 
-          <div class="col-xl-3 col-md-4 client-logo">
-            <img src="assets/img/clients/Universite_Bordeaux_Logo.png" class="img-fluid" alt="">
+          <div class="col-xl-4 col-md-5 client-logo">
+            <img src="assets/img/clients/Universite_Bordeaux_Logo.png" href = "https://www.u-bordeaux.fr/en/" class="img-fluid" alt="">
           </div><!-- End Client Item -->
 
-          <div class="col-xl-3 col-md-4 client-logo">
-            <img src="assets/img/clients/Ministere-logo.png" class="img-fluid" alt="">
+          <div class="col-xl-4 col-md-5 client-logo">
+            <img src="assets/img/clients/Ministere-logo.png" class="img-fluid" href = "https://www.education.gouv.fr/united-our-school-100037" alt="">
           </div><!-- End Client Item -->
 
         </div>
 
       </div>
+
+      <br><br><br>
 
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
@@ -154,28 +159,29 @@
 
         <div class="row g-0 clients-wrap">
 
-        <div class="col-xl-3 col-md-4 client-logo">
-          <img src="assets/img/clients/logo-janestreet.png" class="img-fluid" alt="">
+        <div class="col-xl-4 col-md-5 client-logo">
+          <img src="assets/img/clients/logo-janestreet.png" href = "https://www.janestreet.com/" class="img-fluid" alt="">
         </div><!-- End Client Item -->
 
-        <div class="col-xl-3 col-md-4 client-logo">
-          <img src="assets/img/clients/Logo-Mistral-AI.png" class="img-fluid" alt="">
+        <div class="col-xl-4 col-md-5 client-logo">
+          <img src="assets/img/clients/Logo-Mistral-AI.png" class="img-fluid" href = "https://mistral.ai/" alt="">
         </div><!-- End Client Item -->
 
-        <div class="col-xl-3 col-md-4 client-logo">
-          <img src="assets/img/clients/Qube_Logo.png" class="img-fluid" alt="">
+        <div class="col-xl-4 col-md-5 client-logo">
+          <img src="assets/img/clients/Qube_Logo.png" href = "https://www.qube-rt.com/" class="img-fluid" alt="">
         </div><!-- End Client Item -->
 
         </div>
         </div>
+        <br><br><br>
 
       <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
-          <h2>Private donors</h2>
+          <h2>Donors</h2>
         </div><!-- End Section Title -->
 
         <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <p> Do you wish to contribute to making EGMO 2026 a lifelong inspiring experience for all participants ? <a href="https://www.helloasso.com/associations/animath/formulaires/12/en">Our crowfunding campaign is now open</a>. </p>
+          <p> Do you wish to contribute personnally to making EGMO 2026 a lifelong inspiring experience ? <a href="https://www.helloasso.com/associations/animath/formulaires/12/en">Our crowfunding campaign is now open</a> ! </p>
         </div>
       
     </section><!-- /Clients Section -->
