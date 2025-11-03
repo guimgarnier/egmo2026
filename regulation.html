@@ -15,7 +15,9 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -34,6 +36,60 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <style>
+    li {
+      text-align: left;
+      padding-bottom: 10px;
+    }
+
+    .regulations>li {
+      counter-increment: parent-counter;
+    }
+
+    .regulations>li>ol {
+      counter-reset: child-counter;
+    }
+
+    .regulations>li>ol>li {
+      counter-increment: child-counter;
+    }
+
+    .regulations>li>ol>li::marker {
+      content: counter(parent-counter) "." counter(child-counter) ". ";
+    }
+
+    .regulations>li::marker {
+      content: counter(parent-counter) ". ";
+    }
+
+    .regulations {
+      counter-reset: parent-counter;
+    }
+
+    .regulations-annex>li {
+      counter-increment: parent-counter-annex;
+    }
+
+    .regulations-annex>li>ol {
+      counter-reset: child-counter-annex;
+    }
+
+    .regulations-annex>li>ol>li {
+      counter-increment: child-counter-annex;
+    }
+
+    .regulations-annex>li>ol>li::marker {
+      content: counter(parent-counter-annex, upper-alpha) "." counter(child-counter-annex) ". ";
+    }
+
+    .regulations-annex>li::marker {
+      content: counter(parent-counter-annex, upper-alpha) ". ";
+    }
+
+    .regulations-annex {
+      counter-reset: parent-counter-annex;
+    }
+  </style>
 </head>
 
 <body class="starter-page-page">
@@ -50,7 +106,8 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="blog.html">News</a></li>
-          <li class="dropdown"><a href="#"><span>Information</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="#"><span>Information</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="accommodation.html">Venue & accommodation</a></li>
               <li><a href="travel.html">Travel information</a></li>
@@ -63,7 +120,8 @@
               <li><a href="#">Excursions</a></li>
             </ul>
           </li>
-          <li class="dropdown"><a href="#" class="active"><span>Competition</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="#" class="active"><span>Competition</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="participation.html">Participation</a></li>
               <li><a href="regulation.html" class="active">Regulations</a></li>
@@ -71,7 +129,8 @@
               <li><a href="problems.html">Problems</a></li>
             </ul>
           </li>
-          <li class="dropdown"><a href="#"><span>Organization</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="#"><span>Organization</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="team.html">Organizers</a></li>
               <li><a href="sponsors.html">Sponsors</a></li>
@@ -83,16 +142,17 @@
       </nav>
 
       <div class="header-social-links">
-        
-        <a href="https://www.facebook.com/profile.php?id=61574934237146"><i class="bi bi-facebook"></i></a>        
+
+        <a href="https://www.facebook.com/profile.php?id=61574934237146"><i class="bi bi-facebook"></i></a>
         <a href="https://www.instagram.com/egmo2026/" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.linkedin.com/company/european-girls-mathematical-olympiad/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.linkedin.com/company/european-girls-mathematical-olympiad/" class="linkedin"><i
+            class="bi bi-linkedin"></i></a>
       </div>
 
       <div class="header-social-links">
         &nbsp; &nbsp;
         <a href="regulation.html">EN</a>
-        &nbsp; | 
+        &nbsp; |
         <a href="regulation_fr.html">FR</a>
       </div>
 
@@ -119,8 +179,382 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Coming soon</h2>
-       
+        <p>
+        <h2>EGMO 2025 in France: Regulations</h2>
+        <h3>General Regulations</h3>
+        <ol class="regulations">
+          <li>
+            <h4>General</h4>
+            <ol>
+              <li>The European Girls’ Mathematical Olympiad (EGMO) should if possible be held once per calendar year.
+              </li>
+              <li>The EGMO is governed by these General Regulations together with the Annual Regulations which specify
+                details specific to each EGMO or required by national law. The Annual Regulations take precedence over
+                the General Regulations.</li>
+              <li>An EGMO takes place on dates and in a European country (the “Host Country”) specified in the Annual
+                Regulations. The dates should be during the month of April.</li>
+              <li>A “Host Organisation” specified in the Annual Regulations has overall responsibility for the
+                organisation of an EGMO. The Host Organisation is responsible for ensuring that the arrangements for
+                that EGMO support the aims of the EGMO and competition in the spirit of fair play. The Host Organisation
+                may approve extensions of the deadlines specified in the Annual Regulations.</li>
+              <li>The aim of the EGMO is to give more girls an opportunity to perform mathematically on an international
+                stage, and so to discover, encourage and challenge mathematically gifted young women in all European
+                countries.</li>
+              <li>The EGMO Board consists of three to four elected members from European countries, one elected member
+                from a non-European country, and three Host Country representatives, representing the immediate past,
+                current and following Host Country. One of the three (or four) elected members from European countries
+                is elected President of the Board. The Board is in charge of various matters arising. In particular, the
+                EGMO Board makes recommendations to the Jury regarding future EGMOs and acts on behalf of the Jury in
+                between EGMOs.</li>
+              <li>The General Regulations may be amended, for future EGMOs, by resolution of the Jury or by the Board.
+                In the latter case, the EGMO contact persons will be informed and the changes must be approved during
+                the next EGMO.</li>
+              <li>The Annual Regulations for an EGMO must be approved by the EGMO Board.</li>
+              <li>The official language of the EGMO is English.</li>
+            </ol>
+          </li>
+          <li>
+            <h4>Participation</h4>
+            <ol>
+              <li>Participation in an EGMO is by invitation only. Each invited country is entitled, subject to available
+                space, to send a team consisting of up to four contestants (the “Contestants”), a Leader, and a Deputy
+                Leader, to be known collectively as the participants (the “Participants”). There are charges, specified
+                in the Annual Regulations, for participation by teams from non-European countries that cover the
+                expenses of the participation of such a team. An invitation to participate in an EGMO does not confer
+                any form of political recognition by the EGMO, the EGMO Board or the Host Country. A Host Country may
+                invite an additional team from that country to participate in an EGMO. Such an additional team has the
+                same status as non-European guest teams. There may be teams consisting of Contestants from more than one
+                country if none of these countries sends a regular team. The organisation for the national Mathematical
+                Olympiad in at least one of these countries has to support the team. If all of these countries are
+                European, then this team has the same status as an official European team. Otherwise, it has the same
+                status as a non-European team.</li>
+
+              <li>A country’s Contestants should normally be citizens or residents of that country, and should be
+                selected through that country’s national Mathematical Olympiad or equivalent selection programme.
+                Contestants must have been born less than twenty years before 1 April in the year of participation at
+                the EGMO. Contestants must have been normally enrolled in full-time primary or secondary education on or
+                after 1 December in the year prior to the EGMO, or, in the case of home-schooled students, must not have
+                received a high-school diploma (or equivalent), and must be working toward such a credential on 1
+                December.
+
+                In special circumstances the EGMO Board can approve minor deviation from these rules for specific
+                countries on request. Information on deviations must be available to other participating countries.</li>
+
+              <li>Observers, including family members, (the “Observers”) may apply to accompany the Participants.
+                Observers may be Observers A, accompanying the Leader, Observers B, accompanying the Deputy Leader, or
+                Observers C, accompanying the contestants. The Annual Regulations specify whether Observers may attend a
+                given EGMO, the charges for Observers and the deadlines for payment of such charges. Since extra
+                accommodation is limited, no guarantee is given that applications to accompany the Participants will be
+                successful. The Host Organisation should waive the charges for one Observer A and one Observer B from
+                the Host Country for the following year’s EGMO.</li>
+
+              <li>Contestants must be female. The Annual Regulations may require Observers C to be female. There are no
+                restrictions on the gender of other Participants and Observers.</li>
+
+              <li>The official programme (the “Official Programme”) as referred to below is the programme and outline
+                itinerary for an EGMO and associated events. The Host Organisation reserves the right to amend or revise
+                the Official Programme in whole or part. If it becomes necessary to make any significant changes,
+                Participants and Observers of the invited countries must be notified. The Official Programme contains,
+                among other things, details of accommodation arrangements (including food) for Participants and
+                Observers and the venues for various official events associated with an EGMO. The detailed Official
+                Programme may not be disclosed until arrival.</li>
+
+              <li>Each invited country wishing to participate in an EGMO must confirm their participation in the way and
+                by the date specified in the invitation. The registration of the team on www.egmo.org confirms that the
+                Leader agrees to abide by the General Regulations and the Annual Regulations for that EGMO, and that the
+                Leader is aware of the data protection (https://www.egmo.org/data-protection/). Participants, Observers
+                and their travel details must be registered by dates specified in the Annual Regulations.</li>
+
+              <li>Leaders and Deputy Leaders are responsible for the conduct of the Contestants, and for the avoidance
+                of doubt the Leaders and Deputy Leaders are acting in loco parentis for their Contestants except where
+                the Host Organisation has been notified in writing that an Observer has been nominated to act in loco
+                parentis.</li>
+
+              <li>Leaders and Deputy Leaders must ensure that their Contestants know and fully understand the Contest
+                Regulations. They must also make it clear that any Contestant who violates any of these Regulations may
+                be liable to disqualification from an EGMO.</li>
+            </ol>
+          </li>
+          <li>
+            <h4>Responsibility for Accommodation and expenses</h4>
+            <ol>
+              <li>The official arrival and departure sites are specified in the Annual Regulations.</li>
+
+              <li>The Host Organisation covers all official expenses for Participants and Observers, including
+                accommodation, meals, transport between the official arrival and departure sites and the accommodation
+                sites, as well as other necessary transport between the accommodation sites and other venues on the
+                Official Programme for all the Participants and Observers.</li>
+
+              <li>Other than in respect of the provision of accommodation, meals and transport during the Official
+                Programme as detailed in sub-clause 3.2, the Host Organisation is not liable under any circumstances for
+                any costs or expenses whatsoever or howsoever incurred by any Participant or Observer in connection with
+                an EGMO. In particular, the Host Organisation is not liable for any expenses derived from:
+
+                spending extra days in the Host Country outside the period specified in the Annual Regulations;
+                travel to and from the Host Country incurred by Participants or Observers;
+                travel within the Host Country prior to arrival at the chosen official arrival site or following
+                departure from the chosen official departure site incurred by Participants or Observers.</li>
+
+              <li>All Participants and Observers are responsible for obtaining full accident, health and travel
+                insurance if desired and the Host Organisation is not liable for any expenses arising from failure to
+                obtain such insurance.</li>
+
+              <li>The Host Organisation must offer opportunities to Participants and Observers for excursions and/or
+                cultural trips but is under no obligation to organise specific activities.</li>
+
+              <li>The Annual Regulations specify whether accommodation is in shared or single rooms. Where
+                accommodation is in shared rooms, the Annual Regulations may permit application to be made for a single
+                room, and specify the charges for accommodation in single rooms and the deadlines for payment of such
+                charges. Since extra accommodation is limited, no guarantee is given that such applications will be
+                successful.</li>
+            </ol>
+          </li>
+          <li>
+            <h4>Proposals for Problems</h4>
+            <ol>
+              <li>Each participating country other than the Host Country is invited to submit up to six proposed
+                problems, with solutions, to be received by the Problem Selection Committee no later than the date
+                specified in the Annual Regulations.</li>
+
+              <li>The proposals should, as far as possible, cover various fields of pre-university mathematics and be
+                of varying degrees of difficulty. They should be new and should be strictly confidential. In particular,
+                they may not have been used in any other mathematics competition.</li>
+
+              <li>The proposals and solutions must be written in English.</li>
+
+              <li>The Problem Selection Committee selects the contest problems on the basis of the submitted proposals.
+                The selected problems are presented to the Jury (see sub-clause 6.1) for translation before each paper.
+                The Problem Selection Committee selects an alternative to each problem in case that problem proves to be
+                already known when presented to the Jury.</li>
+            </ol>
+          </li>
+          <li>
+            <h4>Contest Regulations</h4>
+            <ol>
+              <li>The contest element of an EGMO (the “Contest”) takes place on two consecutive days specified in the
+                Annual Regulations, under the direction of the Chief Invigilator appointed by the Host Organisation. On
+                each day of the Contest the examination starts in the morning and lasts for four and a half hours. Each
+                of
+                the two examination papers consists of three problems.</li>
+
+              <li>Each Contestant may receive the problems in one or two or three languages, previously requested
+                during registration, provided that the Jury has approved the relevant translation.</li>
+
+              <li>Each Contestant must work independently and submit solutions in her own language. The solutions must
+                be written on answer forms provided by the Host Organisation. Contestants must write on only one side of
+                each answer form.</li>
+
+              <li>The only instruments permitted in the Contest are writing and drawing instruments, such as coloured
+                pens, rulers, compasses and set squares without protractor markings. In particular, books, papers,
+                tables,
+                calculators, protractors, correction fluids, watches, computers and communication and any other
+                electronic
+                devices are not allowed into the examination room.</li>
+
+              <li>The Jury, Observers and any others who have any knowledge of the problems and solutions before the
+                examinations must do their utmost to ensure that no Contestant has any information, direct or indirect,
+                about any proposed problem. They must also ensure that each day’s Contest problems and solutions are
+                kept
+                strictly confidential until after that day’s paper has finished. They are barred, between the
+                presentation
+                of the each day’s problems to the Jury and the conclusion of that paper, from participating in any
+                mathematical coaching with Contestants, Deputy Leaders and Observers B and C. Similarly, Contestants,
+                Deputy Leaders and Observers B and C are barred from participating in mathematical coaching with Leaders
+                and Observers A during the same periods of time.</li>
+
+              <li>The total number of prizes (first, second and third) must be approved by the Jury and should be
+                approximately half the total number of Contestants. The numbers of first, second and third prizes should
+                be approximately in the ratio 1:2:3. These calculations are made on the basis of the performances of
+                members of official European teams. Prizes are awarded to participants from guest teams and any
+                additional
+                teams on the basis of these boundaries set by the Jury.</li>
+
+              <li>Special prizes may be awarded for solutions considered outstanding by the Jury. Proposals for such
+                special prizes are put forward by the Chief Coordinator appointed by the Host Organisation.</li>
+
+              <li>The prizes are awarded at the Closing Ceremony. Each Contestant who has not received a first, second
+                or third prize receives a Certificate of Honourable Mention if she has received seven points for the
+                solution of at least one problem. </li>
+
+              <li>Each Participant and Observer receives a Certificate of Participation.</li>
+
+              <li>Participants and Observers consent to the publication of their names and, if provided, photographs
+                on the EGMO website. Results may be anonymised and photographs removed on a request made by a Contestant
+                at least two years after her final participation at the EGMO. Such a request must be made through the
+                registered EGMO contact for that Contestant’s Country. </li>
+            </ol>
+          </li>
+          <li>
+            <h4>Jury Regulations</h4>
+            <ol>
+              <li>The “Jury” consists of all Leaders, together with a Chair. A Leader may be replaced by her/his Deputy
+                Leader in an emergency (subject to the prior approval and consent of the Chair of the Jury). Observers
+                A,
+                members of the Problem Selection Committee and the Coordinators (as defined in clause 7 below) may also
+                attend meetings of the Jury as observers. Observers are not entitled to speak or vote. However, they may
+                exceptionally speak at the explicit request of the Chair of the Jury. Deputy Leaders and Observers B may
+                attend, as observers, meetings of the Jury held after the Contest. </li>
+
+              <li>Only Leaders of official European teams may vote in the decisions of the Jury and each such Leader
+                has one vote. A motion is carried by a simple majority of those voting. In the event of a tie, the Jury
+                Chair has a casting vote.</li>
+
+              <li>The Jury may appoint sub-committees to consider specific matters. In particular, it appoints the
+                Appeal Committee, consisting of seven Leaders, which should be speaking a wide variety of languages and
+                of
+                which one should be member of the Board. (See sub-clause 7.5.) </li>
+
+              <li>The meetings of the Jury are conducted principally in English. </li>
+
+              <li>On or before each day of the Contest the Jury approves the Contest problems selected by the Problem
+                Selection Committee, or alternative problems if a problem proves to be already known, and approves the
+                translations of the Contest problems into all required languages (including the final English version).
+              </li>
+
+              <li>The Jury approves the marking schemes for each problem. Initial proposals for marking schemes are
+                prepared under the direction of the Chief Coordinator.</li>
+
+              <li>On each day of the Contest, the Jury considers written questions raised by Contestants during the
+                first half hour of the Contest and decides on replies. </li>
+
+              <li>After the Contest, the Jury
+                receives and approves a report made by the Chief Invigilator on the conduct of the examinations;
+                receives a report from the Appeal Committee on any unresolved disputes which may have arisen during
+                coordination (as in sub-clause 7.5);
+                approves the scores of all Contestants;
+                decides winners of first, second and third prizes;
+                considers and makes decisions on all proposals to award special prizes;
+                considers matters raised about future EGMOs. </li>
+
+              <li>Any allegation or suspicion of a violation of the Regulations generally must be reported to the Chair
+                of the Jury. If she/he considers there is a prima facie case, she/he must form a committee to
+                investigate
+                further. The committee must report its findings to the Jury. The Jury must decide whether a violation
+                has
+                occurred and, if it decides that one has, then it must decide what sanction, if any, to apply. Possible
+                sanctions include the disqualification of an individual Contestant or an entire team from the
+                competition.
+                The decision of the Jury is final. </li>
+            </ol>
+          </li>
+          <li>
+            <h4>Coordination</h4>
+            <ol>
+              <li> Coordination is the process where the official scores of each Contestant are determined in a
+                homogeneous, fair and transparent manner. Leaders of each country must submit the papers of their
+                Contestants to a coordination group provided by the Host Organisation. The coordination group consists
+                of
+                a Chief Coordinator and, for each problem, a Problem Captain and a group of Coordinators for that
+                problem. </li>
+
+              <li>For each problem, each Contestant receives an integer score out of a maximum of seven points.</li>
+
+              <li>Prior to coordination, Contestants’ solutions are assessed by Leaders and Deputy Leaders, and,
+                independently, by Coordinators, in accordance with the marking schemes approved by the Jury.</li>
+
+              <li>Each coordination session involves two Coordinators provided by the Host Organisation and
+                representatives of the relevant country. Two representatives, normally the Leader and Deputy Leader, are
+                permitted to participate actively in any one session. With the approval of the Coordinators, one further
+                representative may be present to observe the coordination process but cannot take any active part in it.
+              </li>
+
+              <li>The Leader (or Deputy Leader, if the Leader is not present) and the designated Coordinators should
+                agree on the scores for each Contestant. These scores are recorded on official forms and signed by the
+                Leader and one of the Coordinators. If the Leader and the Coordinators fail to agree on a score for a
+                Contestant, the matter is first referred to the Problem Captain for that problem, provided by the Host
+                Organisation. If there is still no agreement, the matter is referred to the Chief Coordinator. If the
+                Leader and Chief Coordinator then fail to agree on a score, the Chief Coordinator reports the matter to
+                the Appeal Committee. Both the Coordinators and the Leader write down their view in English, including
+                the
+                suggested mark. Additionally, the Leader provides an English translation of all relevant parts of the
+                solution of the Contestant. The Appeal Committee then determines the final score. </li>
+
+              <li>If, during a coordination session, the designated Coordinators consider that an irregularity may have
+                occurred, they must immediately refer the matter to the Chief Coordinator. Unless she/he is satisfied
+                that
+                there is no case to answer, she/he must report the situation to the Chair of the Jury (see sub-clause
+                6.9).</li>
+
+              <li>For each problem, solutions by Contestants from the Host Country are coordinated by the Leader and
+                Deputy Leader of the country that submitted the problem, with the assistance of the Coordinators for
+                that
+                problem. </li>
+            </ol>
+          </li>
+          <li>
+            <h4>Entire Agreement and Understanding</h4>
+            <ol>
+              <li>The Participants and Observers acknowledge that these Regulations, and the documents referred to
+                herein, constitute the full agreement and understanding of their parties and supersede any previous
+                discussions or representations made by or on the behalf of the Host Organisation in respect of an EGMO.
+              </li>
+            </ol>
+          </li>
+          <li>
+            <h4>Force Majeure</h4>
+            <ol>
+              <li>In these Regulations, “force majeure” means any cause preventing the Host Organisation from
+                performing any or all of its obligations that arises from or is attributable to acts, events, omissions
+                or
+                accidents beyond the reasonable control of the party so prevented, including without limitation strikes,
+                lock-outs or other industrial disputes (whether involving the workforce of the party so prevented or of
+                any other party), act of God, war, riot, civil commotion, malicious damage, compliance with any law or
+                governmental order, rule, regulation or direction, accident, breakdown of plant or machinery,
+                earthquake,
+                typhoon, fire, flood, storm, or default of suppliers or sub-contractors.</li>
+
+              <li>If the Host Organisation is prevented from or delayed in performing any of its obligations to the
+                Participants and Observers under these Regulations by force majeure, it has no liability in respect of
+                the
+                performance of those obligations affected by the force majeure events, both during the continuation of
+                such events and for such time after they cease as is necessary for the Host Organisation to recommence
+                its
+                affected operations in order for it to perform its obligations.</li>
+            </ol>
+          </li>
+        </ol>
+        <ol class="regulations-annex">
+          <li>
+            <h4>Annual Regulations</h4>
+            <ol>
+              <li>The Host City for the 15th European Girls’ Mathematical Olympiad (EGMO 2026) is Bordeaux, France. EGMO
+                2026 will be held as on site event.</li>
+              <li>The Official Program begins on 9 April 2026 and ends on 15 April 2026.</li>
+              <li>The Host Organization for EGMO 2026 is Animath (Association pour l’animation mathématique).</li>
+              <li>The Contest papers for EGMO 2026 are held on 11 April and 12 April 2026; Contestants must have been
+                born on or after April 2nd 2026.</li>
+              <li>Teams not participating for the first time (regardless of whether they are European or guest teams)
+                must confirm participation and send the intended team size to Edwige Cyffers at egmo2026@animath.fr by
+                20 November 2025. Teams wishing to participate for the first time must apply to participate and send the
+                intended team size to egmo2026@animath.fr by 20 November 2025. Since the Host Organization can receive
+                only a limited number of teams, their applications will be confirmed or declined by the end of December
+                2025.</li>
+              <li>Applications for Observers to accompany the participants, specifying the number of Observers, must be
+                made by 26 January 2026. If accepted, payment of EUR 1950 per Observer must be made in cleared funds by
+                28 February 2026. Applications received without the full payment of the charges will be rejected. No
+                refunds will be given.</li>
+              <li>The charge for participation by non-European countries is EUR 1200 per Contestant and EUR 1700 per
+                Leader, Deputy Leader. Payment must be made in cleared funds by 28 February 2026. Applications received
+                without the full payment of the charges will be rejected. No refunds will be given.</li>
+              <li>Registration of Participants and their travel details must be completed by 28 February 2026.</li>
+              <li>The official arrival and departure sites are Bordeaux airport “Aéroport de Bordeaux Mérignac” (BOD)
+                and Bordeaux train station “Gare de Bordeaux Saint - Jean ”.</li>
+              <li>Accommodation for Leaders, Deputy Leaders and Observers will be in shared rooms. A limited number of
+                single rooms is available for EUR 500 extra charge. Accommodation for Contestants will be in shared
+                rooms. Accommodation in single rooms for Contestants and Observers C is not available.</li>
+              <li>Applications for single rooms must be made by 20 January 2026. If accepted, payment of EUR 500 per
+                single room must be made in cleared funds by 28 February 2026. Applications received without the full
+                payment of the charges will be rejected. No refunds will be given.</li>
+              <li>Proposals for problems must be sent to the EGMO Problem Selection Committee, at psc-egmo@animath.fr,
+                to arrive by 1 January 2026.</li>
+              <li>Participants agree that any photographs/videos made during EGMO 2026 can be published. Personal data
+                will be handled according to European law, see https://www.egmo.org/data-protection/.</li>
+              <li>When Force Majeure makes it impossible for majority teams to travel to France (e.g., health crises)
+                amendments to these Annual regulations will be approved by the EGMO Board.</li>
+            </ol>
+          </li>
+        </ol>
+        </p>
       </div><!-- End Section Title -->
 
 
@@ -141,14 +575,15 @@
             <p>à l'Institut Henri Poincaré</p>
             <p>11 et 13 rue Pierre et Marie Curie</p>
             <p>75005 Paris 05 France</p>
-            
+
             <p><strong>Email:</strong> <span>egmo2026@animath.fr</span></p>
           </div>
           <div class="social-links d-flex mt-4">
             <a href="https://www.facebook.com/profile.php?id=61574934237146">
-<i class="bi bi-facebook"></i></a>
+              <i class="bi bi-facebook"></i></a>
             <a href="https://www.instagram.com/egmo2026/"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.linkedin.com/company/european-girls-mathematical-olympiad/"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.linkedin.com/company/european-girls-mathematical-olympiad/"><i
+                class="bi bi-linkedin"></i></a>
           </div>
         </div>
 
@@ -184,14 +619,16 @@
         <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href=“https://themewagon.com>ThemeWagon
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a
+          href=“https://themewagon.com>ThemeWagon
       </div>
     </div>
 
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
