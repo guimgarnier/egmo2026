@@ -15,7 +15,9 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -34,6 +36,60 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <style>
+    li {
+      text-align: left;
+      padding-bottom: 10px;
+    }
+
+    .regulations>li {
+      counter-increment: parent-counter;
+    }
+
+    .regulations>li>ol {
+      counter-reset: child-counter;
+    }
+
+    .regulations>li>ol>li {
+      counter-increment: child-counter;
+    }
+
+    .regulations>li>ol>li::marker {
+      content: counter(parent-counter) "." counter(child-counter) ". ";
+    }
+
+    .regulations>li::marker {
+      content: counter(parent-counter) ". ";
+    }
+
+    .regulations {
+      counter-reset: parent-counter;
+    }
+
+    .regulations-annex>li {
+      counter-increment: parent-counter-annex;
+    }
+
+    .regulations-annex>li>ol {
+      counter-reset: child-counter-annex;
+    }
+
+    .regulations-annex>li>ol>li {
+      counter-increment: child-counter-annex;
+    }
+
+    .regulations-annex>li>ol>li::marker {
+      content: counter(parent-counter-annex, upper-alpha) "." counter(child-counter-annex) ". ";
+    }
+
+    .regulations-annex>li::marker {
+      content: counter(parent-counter-annex, upper-alpha) ". ";
+    }
+
+    .regulations-annex {
+      counter-reset: parent-counter-annex;
+    }
+  </style>
 </head>
 
 <body class="starter-page-page">
@@ -50,7 +106,8 @@
         <ul>
           <li><a href="index_fr.html">Accueil</a></li>
           <li><a href="blog_fr.html">Nouvelles</a></li>
-          <li class="dropdown"><a href="#"><span>Information</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="#"><span>Information</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="accommodation_fr.html">Lieux et hébergement</a></li>
               <li><a href="travel_fr.html">Préparer son voyage</a></li>
@@ -63,7 +120,8 @@
               <li><a href="#">Excursions</a></li>
             </ul>
           </li>
-          <li class="dropdown"><a href="#" class="active"><span>Compétition</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="#" class="active"><span>Compétition</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="participation_fr.html">Participation</a></li>
               <li><a href="regulation_fr.html" class="active">Règlement</a></li>
@@ -71,7 +129,8 @@
               <li><a href="problems_fr.html">Problèmes</a></li>
             </ul>
           </li>
-          <li class="dropdown"><a href="#"><span>Organisation</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="#"><span>Organisation</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="team_fr.html">L'équipe</a></li>
               <li><a href="sponsors_fr.html">Soutien et parrainage</a></li>
@@ -83,16 +142,17 @@
       </nav>
 
       <div class="header-social-links">
-        
-        <a href="https://www.facebook.com/profile.php?id=61574934237146"><i class="bi bi-facebook"></i></a>        
+
+        <a href="https://www.facebook.com/profile.php?id=61574934237146"><i class="bi bi-facebook"></i></a>
         <a href="https://www.instagram.com/egmo2026/" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.linkedin.com/company/european-girls-mathematical-olympiad/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.linkedin.com/company/european-girls-mathematical-olympiad/" class="linkedin"><i
+            class="bi bi-linkedin"></i></a>
       </div>
 
       <div class="header-social-links">
         &nbsp; &nbsp;
         <a href="regulation.html">EN</a>
-        &nbsp; | 
+        &nbsp; |
         <a href="regulation_fr.html">FR</a>
       </div>
 
@@ -462,7 +522,7 @@
               <li>The Official Program begins on 9 April 2026 and ends on 15 April 2026.</li>
               <li>The Host Organization for EGMO 2026 is Animath (Association pour l’animation mathématique).</li>
               <li>The Contest papers for EGMO 2026 are held on 11 April and 12 April 2026; Contestants must have been
-                born on or after April 2nd 2026.</li>
+                born on or after April 2nd 2006.</li>
               <li>Teams not participating for the first time (regardless of whether they are European or guest teams)
                 must confirm participation and send the intended team size to Edwige Cyffers at egmo2026@animath.fr by
                 20 November 2025. Teams wishing to participate for the first time must apply to participate and send the
@@ -515,14 +575,15 @@
             <p>à l'Institut Henri Poincaré</p>
             <p>11 et 13 rue Pierre et Marie Curie</p>
             <p>75005 Paris 05 France</p>
-            
+
             <p><strong>Email:</strong> <span>egmo2026@animath.fr</span></p>
           </div>
           <div class="social-links d-flex mt-4">
             <a href="https://www.facebook.com/profile.php?id=61574934237146">
-<i class="bi bi-facebook"></i></a>
+              <i class="bi bi-facebook"></i></a>
             <a href="https://www.instagram.com/egmo2026/"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.linkedin.com/company/european-girls-mathematical-olympiad/"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.linkedin.com/company/european-girls-mathematical-olympiad/"><i
+                class="bi bi-linkedin"></i></a>
           </div>
         </div>
 
@@ -558,14 +619,16 @@
         <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href=“https://themewagon.com>ThemeWagon
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a
+          href=“https://themewagon.com>ThemeWagon
       </div>
     </div>
 
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
