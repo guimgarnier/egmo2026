@@ -1307,6 +1307,7 @@ section,
   border-right: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
   border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
   overflow: hidden;
+  text-align: center;
 }
 
 .clients .client-logo img {
