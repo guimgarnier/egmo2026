@@ -12,29 +12,41 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway",  sans-serif;
-  --nav-font: "Nunito",  sans-serif;
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Raleway", sans-serif;
+  --nav-font: "Nunito", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #111111; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #0e2841; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+:root {
+  --background-color: #ffffff;
+  /* Background color for the entire website, including individual sections */
+  --default-color: #444444;
+  /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #111111;
+  /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #0e2841;
+  /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #ffffff;
+  /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff;
+  /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #444444;  /* The default color of the main navmenu links */
-  --nav-hover-color:#166082; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #444444; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #166082; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: #444444;
+  /* The default color of the main navmenu links */
+  --nav-hover-color: #166082;
+  /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #ffffff;
+  /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #ffffff;
+  /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #444444;
+  /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #166082;
+  /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -2627,4 +2639,131 @@ section,
   padding-left: 5px;
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
+}
+
+/*--------------------------------------------------------------
+# Calendar Section
+--------------------------------------------------------------*/
+
+.schedule-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.schedule-wrap .page-heading {
+  font-family: var(--heading-font, "Raleway", sans-serif);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--heading-color, #111111);
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+}
+
+.schedule-wrap .page-sub {
+  color: color-mix(in srgb, var(--default-color, #444), transparent 40%);
+  font-size: 0.95rem;
+  margin-bottom: 2.5rem;
+}
+
+.day-block {
+  margin-bottom: 2.5rem;
+}
+
+.day-block .day-label {
+  font-family: var(--nav-font, "Nunito", sans-serif);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--default-color, #444), transparent 50%);
+  margin-bottom: 0.4rem;
+}
+
+.day-block .day-title {
+  font-family: var(--heading-font, "Raleway", sans-serif);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--heading-color, #111111);
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--accent-color, #0e2841);
+}
+
+.event {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.6rem 0.8rem;
+  border-radius: 5px;
+  margin-bottom: 4px;
+  background-color: var(--surface-color, #ffffff);
+  transition: 0.3s;
+}
+
+.event:hover {
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.08);
+}
+
+.event .time {
+  font-family: var(--nav-font, "Nunito", sans-serif);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: color-mix(in srgb, var(--default-color, #444), transparent 30%);
+  min-width: 44px;
+  padding-top: 2px;
+  white-space: nowrap;
+}
+
+.event .info {
+  flex: 1;
+}
+
+.event .activity {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--heading-color, #111111);
+  font-family: var(--heading-font, "Raleway", sans-serif);
+}
+
+.event .location {
+  font-size: 0.8rem;
+  color: color-mix(in srgb, var(--default-color, #444), transparent 40%);
+  margin-top: 2px;
+}
+
+/* Optional events — visually secondary */
+.event.optional {
+  border-left: 2px solid color-mix(in srgb, var(--default-color, #444), transparent 75%);
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.event.optional .time {
+  color: color-mix(in srgb, var(--default-color, #444), transparent 60%);
+  font-weight: 400;
+}
+
+.event.optional .activity {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: color-mix(in srgb, var(--default-color, #444), transparent 40%);
+}
+
+.event.optional .location {
+  color: color-mix(in srgb, var(--default-color, #444), transparent 55%);
+}
+
+.opt-badge {
+  display: inline-block;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background-color: var(--accent-color, #0e2841);
+  color: var(--contrast-color, #ffffff);
+  border-radius: 4px;
+  padding: 2px 7px;
+  margin-left: 7px;
+  vertical-align: middle;
 }
