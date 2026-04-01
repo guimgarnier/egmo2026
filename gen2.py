@@ -22,6 +22,22 @@ GROUPS = {
     "Coordinateurs":  ("nav-coordinators", "Coordinateurs"),
 }
 
+GROUP_NAMES_EN = {
+    "Équipes": "Contestants",
+    "Deputy leaders": "Deputy leaders", 
+    "Leaders": "Leaders", 
+    "Guides": "Guides", 
+    "Coordinateurs": "Coordinators", 
+}
+
+GROUP_NAMES_FR = {
+    "Équipes": "Équipes",
+    "Deputy leaders": "Chefs d'équipe adjoints", 
+    "Leaders": "Chefs d'équipe", 
+    "Guides": "Guides", 
+    "Coordinateurs": "Coordinateurs", 
+}
+
 MARKER_START = "<!-- ======= Calendar Section ======= -->"
 MARKER_END   = "<!-- End Calendar Section -->"
 
@@ -121,13 +137,14 @@ def render_html(days, lang):
 
     tab_buttons = []
     for idx, (grp, (tab_id, label)) in enumerate(grp_items):
+        l = GROUP_NAMES_FR[label] if lang == "fr" else GROUP_NAMES_EN[label]
         active = "active" if idx == 0 else ""
         selected = "true" if idx == 0 else "false"
         tab_buttons.append(
             f'            <button class="nav-link {active}" id="{tab_id}-tab"'
             f' data-bs-toggle="tab" data-bs-target="#{tab_id}"'
             f' type="button" role="tab" aria-selected="{selected}">'
-            f'<h6>{label}</h6></button>'
+            f'<h5>{l}</h5></button>'
         )
 
     tab_panes = []
