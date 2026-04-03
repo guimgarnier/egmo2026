@@ -215,6 +215,22 @@ h6 {
   line-height: 0px;
 }
 
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.lang-switcher a {
+  padding: 0 2px;
+}
+
+.lang-switcher span {
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+}
+
+
 @media (max-width: 1200px) {
   .header .logo {
     order: 1;
