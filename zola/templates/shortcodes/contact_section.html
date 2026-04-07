@@ -5,7 +5,7 @@
   <div class="container" data-aos="fade">
     <div class="info">
       <h3>{{ heading }}</h3>
-      {{ body | safe }}
+      {{ body | markdown | safe }}
       <div class="info-item d-flex">
         <i class="bi bi-geo-alt flex-shrink-0"></i>
         <div>

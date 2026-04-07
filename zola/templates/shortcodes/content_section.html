@@ -6,6 +6,6 @@
   </div>
   {% endif %}
   <div class="container" data-aos="fade-up">
-    {{ body | safe }}
+    {{ body | markdown | safe }}
   </div>
 </section>
