@@ -1,0 +1,11 @@
+<section class="starter-section section">
+  {% if title is defined %}
+  <div class="container section-title" data-aos="fade-up">
+    <h2>{{ title }}</h2>
+    {% if subtitle is defined %}<h3>{{ subtitle }}</h3>{% endif %}
+  </div>
+  {% endif %}
+  <div class="container" data-aos="fade-up">
+    {{ body | safe }}
+  </div>
+</section>

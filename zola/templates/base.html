@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+  <meta name="description" content="{% block description %}{{ config.description }}{% endblock description %}">
+
+  <!-- Favicons -->
+  <link href="{{ get_url(path='assets/img/favicon.png') }}" rel="icon">
+  <link href="{{ get_url(path='assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{{ get_url(path='assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ get_url(path='assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ get_url(path='assets/vendor/aos/aos.css') }}" rel="stylesheet">
+  <link href="{{ get_url(path='assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+  <link href="{{ get_url(path='assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="{{ get_url(path='assets/css/main.css') }}" rel="stylesheet">
+
+  {% block extra_head %}{% endblock extra_head %}
+</head>
+
+<body class="{% block body_class %}starter-page-page{% endblock body_class %}">
+
+  {% if lang == "fr" %}{% set pfx = config.base_url ~ "/fr" %}{% else %}{% set pfx = config.base_url %}{% endif %}
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container position-relative d-flex align-items-center">
+
+      <a href="{{ get_url(path='@/_index.md') | replace(from=config.base_url ~ '/', to='/') }}" class="logo d-flex align-items-center me-auto">
+        <img src="{{ get_url(path='assets/img/logo.png') }}" alt="">
+        <h1 class="sitename">EGMO 2026</h1><span>.</span>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="{{ pfx }}/" {% block nav_home %}{% endblock nav_home %}>{{ trans(key="home") }}</a></li>
+          <li><a href="{{ pfx }}/news/" {% block nav_news %}{% endblock nav_news %}>{{ trans(key="news") }}</a></li>
+          <li class="dropdown"><a href="#" {% block nav_information %}{% endblock nav_information %}><span>{{ trans(key="information") }}</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="{{ pfx }}/information/accommodation/" {% block nav_accommodation %}{% endblock nav_accommodation %}>{{ trans(key="venue") }}</a></li>
+              <li><a href="{{ pfx }}/information/travel/" {% block nav_travel %}{% endblock nav_travel %}>{{ trans(key="travel") }}</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#" {% block nav_programme %}{% endblock nav_programme %}><span>{{ trans(key="programme") }}</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="{{ pfx }}/programme/agenda/" {% block nav_agenda %}{% endblock nav_agenda %}>{{ trans(key="timetable") }}</a></li>
+              <li><a href="{{ pfx }}/programme/activities/" {% block nav_activities %}{% endblock nav_activities %}>{{ trans(key="activities") }}</a></li>
+              <li><a href="{{ pfx }}/programme/excursions/" {% block nav_excursions %}{% endblock nav_excursions %}>{{ trans(key="excursions") }}</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#" {% block nav_competition %}{% endblock nav_competition %}><span>{{ trans(key="competition") }}</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="{{ pfx }}/competition/participation/" {% block nav_participation %}{% endblock nav_participation %}>{{ trans(key="participation") }}</a></li>
+              <li><a href="{{ pfx }}/competition/regulations/" {% block nav_regulations %}{% endblock nav_regulations %}>{{ trans(key="regulations") }}</a></li>
+              <li><a href="{{ pfx }}/competition/code-of-conduct/" {% block nav_coc %}{% endblock nav_coc %}>{{ trans(key="code_of_conduct") }}</a></li>
+              <li><a href="{{ pfx }}/competition/deadlines/" {% block nav_deadlines %}{% endblock nav_deadlines %}>{{ trans(key="deadlines") }}</a></li>
+              <li><a href="{{ pfx }}/competition/problems/" {% block nav_problems %}{% endblock nav_problems %}>{{ trans(key="problems") }}</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#" {% block nav_organization %}{% endblock nav_organization %}><span>{{ trans(key="organization") }}</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="{{ pfx }}/organization/team/" {% block nav_team %}{% endblock nav_team %}>{{ trans(key="organizers") }}</a></li>
+              <li><a href="{{ pfx }}/organization/sponsors/" {% block nav_sponsors %}{% endblock nav_sponsors %}>{{ trans(key="sponsors") }}</a></li>
+            </ul>
+          </li>
+          <li><a href="{{ pfx }}/contact/" {% block nav_contact %}{% endblock nav_contact %}>{{ trans(key="contacts") }}</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="header-social-links">
+        <a href="https://www.facebook.com/profile.php?id=61574934237146"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/egmo2026/" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/european-girls-mathematical-olympiad/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+      <div class="lang-switcher">
+        {% block lang_switcher %}
+          {% if lang == "fr" %}
+            <a href="{{ pfx | replace(from=config.base_url ~ '/fr', to=config.base_url) }}{{ page.path | default(value=section.path | default(value='/')) | replace(from='/fr/', to='/') }}">EN</a>
+            <span>|</span>
+            <strong>FR</strong>
+          {% else %}
+            <strong>EN</strong>
+            <span>|</span>
+            <a href="{{ config.base_url }}/fr{{ page.path | default(value=section.path | default(value='/')) }}">FR</a>
+          {% endif %}
+        {% endblock lang_switcher %}
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+    {% block content %}{% endblock content %}
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="{{ pfx }}/" class="logo d-flex align-items-center">
+            <span class="sitename">EGMO 2026</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Animath</p>
+            <p>à l'Institut Henri Poincaré</p>
+            <p>11 et 13 rue Pierre et Marie Curie</p>
+            <p>75005 Paris 05 France</p>
+            <p><strong>Email:</strong> <span>egmo2026@animath.fr</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href="https://www.facebook.com/profile.php?id=61574934237146"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/egmo2026/"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/european-girls-mathematical-olympiad/"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>{{ trans(key="useful_links") }}</h4>
+          <ul>
+            <li><a href="https://www.animath.fr/">Animath website</a></li>
+            <li><a href="https://www.egmo.org/">EGMO website</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">EGMO 2026</strong> <span>{{ trans(key="all_rights_reserved") }}</span></p>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{{ get_url(path='assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ get_url(path='assets/vendor/aos/aos.js') }}"></script>
+  <script src="{{ get_url(path='assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
+  <script src="{{ get_url(path='assets/vendor/imagesloaded/imagesloaded.pkgd.min.js') }}"></script>
+  <script src="{{ get_url(path='assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+  <script src="{{ get_url(path='assets/vendor/waypoints/noframework.waypoints.js') }}"></script>
+  <script src="{{ get_url(path='assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
+  <script src="{{ get_url(path='assets/js/main.js') }}"></script>
+
+</body>
+
+</html>

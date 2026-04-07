@@ -1,0 +1,60 @@
+base_url = "https://egmo2026.fr"
+title = "EGMO 2026"
+description = "15th European Girls' Mathematical Olympiad – Bordeaux, France, April 9–15, 2026"
+default_language = "en"
+compile_sass = false
+generate_feeds = false
+minify_html = false
+
+[markdown]
+
+[languages.fr]
+title = "EGMO 2026"
+description = "15e Olympiade Européenne de Mathématiques pour les Filles – Bordeaux, France, 9–15 avril 2026"
+generate_feeds = false
+
+[languages.fr.translations]
+home = "Accueil"
+news = "Nouvelles"
+information = "Information"
+venue = "Lieux et hébergement"
+travel = "Préparer son voyage"
+programme = "Programme"
+timetable = "Emploi du temps"
+activities = "Activités"
+excursions = "Excursions"
+competition = "Compétition"
+participation = "Participation"
+regulations = "Règlement"
+code_of_conduct = "Code de conduite"
+deadlines = "Dates importantes"
+problems = "Problèmes"
+organization = "Organisation"
+organizers = "L'équipe"
+sponsors = "Soutien et parrainage"
+contacts = "Contacts"
+useful_links = "Liens utiles"
+all_rights_reserved = "Tous droits réservés"
+
+[translations]
+home = "Home"
+news = "News"
+information = "Information"
+venue = "Venue & accommodation"
+travel = "Travel information"
+programme = "Programme"
+timetable = "Timetable"
+activities = "Activities"
+excursions = "Excursions"
+competition = "Competition"
+participation = "Participation"
+regulations = "Regulations"
+code_of_conduct = "Code of Conduct"
+deadlines = "Deadlines"
+problems = "Problems"
+organization = "Organization"
+organizers = "Organizers"
+sponsors = "Sponsors"
+contacts = "Contacts"
+useful_links = "Useful links"
+all_rights_reserved = "All Rights Reserved"

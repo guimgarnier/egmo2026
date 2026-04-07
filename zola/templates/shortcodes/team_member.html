@@ -1,0 +1,17 @@
+<div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+  <div class="team-member">
+    <div class="member-img">
+      <img src="{{ get_url(path=photo) }}" class="img-fluid" alt="{{ name }}">
+      {% if linkedin is defined or email is defined %}
+      <div class="social">
+        {% if linkedin is defined %}<a href="{{ linkedin }}"><i class="bi bi-linkedin"></i></a>{% endif %}
+        {% if email is defined %}<a href="mailto:{{ email }}"><i class="bi bi-envelope"></i></a>{% endif %}
+      </div>
+      {% endif %}
+    </div>
+    <div class="member-info">
+      <h4>{{ name }}</h4>
+      <span>{{ role }}</span>
+    </div>
+  </div>
+</div>
