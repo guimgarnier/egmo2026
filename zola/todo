@@ -1,0 +1,9 @@
+- [ ] news (fix news articles): write the actual content on the pages. 
+- [ ] agenda: copy the gen2.py script to the zola project. use it (with uv) to generate the whole detailed timetable for everyone.
+
+- [ ] ajout activités: 
+
+- [ ] regulations (numbering incorrect): for nested rules, you need 1.1 numbering.
+- [ ] organisers (put aline & edwige centered at the top before other volonteers)
+
+- [ ] bandeau: fix padding between socials and language.
