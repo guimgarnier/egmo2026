@@ -11,9 +11,12 @@ La préparation olympique est devenue la **[Préparation Olympique Française de
 L'organisation locale de l'EGMO 2026 est devenue une action d'Animath à part entière, avec des bénévoles de la POFM et d'autres actions pour relever le défi.
 {% end %}
 
-{% team_grid() %}
+{% team_grid_centered() %}
 {{ team_member(name="Aline Cahuzac", photo="assets/img/team/aline.jpg", role="Supervision générale, relations partenaires publics, coordination avec la POFM", linkedin="https://fr.linkedin.com/in/aline-cahuzac-6b7330301", email="aline.cahuzac@animath.fr") }}
 {{ team_member(name="Edwige Cyffers", photo="assets/img/team/edwige.jpg", role="Supervision générale, représentante de la France au Conseil EGMO, relations sponsors privés", linkedin="https://fr.linkedin.com/in/edwige-cyffers", email="edwige.cyffers@animath.fr") }}
+{% end %}
+
+{% team_grid() %}
 {{ team_member(name="Auriane Gabaut", photo="assets/img/team/auriane.jpg", role="Expérience des participants à Bordeaux") }}
 {{ team_member(name="Elisa Lorenzo Garcia", photo="assets/img/team/PhotoElisa.png", role="Planification et activités du jury et des coordinateurs") }}
 {{ team_member(name="Anais Meunier", photo="assets/img/team/anais.png", role="Responsable logistique et bénévoles") }}

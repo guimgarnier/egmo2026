@@ -2783,3 +2783,30 @@ section,
   margin-left: 7px;
   vertical-align: middle;
 }
+/* ===== Regulations nested numbering ===== */
+ol.regulations {
+  counter-reset: section;
+  list-style: none;
+  padding-left: 0;
+}
+ol.regulations > li {
+  counter-increment: section;
+}
+ol.regulations > li > ol {
+  counter-reset: subsection;
+  list-style: none;
+  padding-left: 1.5em;
+}
+ol.regulations > li > ol > li {
+  counter-increment: subsection;
+}
+ol.regulations > li > ol > li::before {
+  content: counter(section) "." counter(subsection) ". ";
+  font-weight: 600;
+  margin-right: 0.3em;
+}
+
+/* ===== Header: gap between social links and lang switcher ===== */
+.lang-switcher {
+  padding-left: 15px;
+}

@@ -11,10 +11,12 @@ Meanwhile, the olympic preparation has become the **[Préparation Olympique Fran
 The local organization of EGMO 2026 has now become an action of Animath in itself, with volunteers from the POFM and other actions to tackle the challenge.
 {% end %}
 
-
-{% team_grid() %}
+{% team_grid_centered() %}
 {{ team_member(name="Aline Cahuzac", photo="assets/img/team/aline.jpg", role="General supervision, public partners relations, coordination with the POFM", linkedin="https://fr.linkedin.com/in/aline-cahuzac-6b7330301", email="aline.cahuzac@animath.fr") }}
 {{ team_member(name="Edwige Cyffers", photo="assets/img/team/edwige.jpg", role="General supervision, France representative at EGMO Board, private sponsors relations", linkedin="https://fr.linkedin.com/in/edwige-cyffers", email="edwige.cyffers@animath.fr") }}
+{% end %}
+
+{% team_grid() %}
 {{ team_member(name="Auriane Gabaut", photo="assets/img/team/auriane.jpg", role="Participant experience in Bordeaux") }}
 {{ team_member(name="Elisa Lorenzo Garcia", photo="assets/img/team/PhotoElisa.png", role="Jury and coordinators planning and activities") }}
 {{ team_member(name="Anais Meunier", photo="assets/img/team/anais.png", role="Head of logistics and chief volunteer") }}
