@@ -31,12 +31,12 @@
 
 <body class="{% block body_class %}starter-page-page{% endblock body_class %}">
 
-  {% if lang == "fr" %}{% set pfx = config.base_url ~ "/fr" %}{% else %}{% set pfx = config.base_url %}{% endif %}
+  {% if lang == "fr" %}{% set pfx = "/fr" %}{% else %}{% set pfx = "" %}{% endif %}
 
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container position-relative d-flex align-items-center">
 
-      <a href="{{ get_url(path='@/_index.md') | replace(from=config.base_url ~ '/', to='/') }}" class="logo d-flex align-items-center me-auto">
+      <a href="{{ pfx }}/" class="logo d-flex align-items-center me-auto">
         <img src="{{ get_url(path='assets/img/logo.png') }}" alt="">
         <h1 class="sitename">EGMO 2026</h1><span>.</span>
       </a>
@@ -86,14 +86,16 @@
 
       <div class="lang-switcher">
         {% block lang_switcher %}
+          {% set current_permalink = page.permalink | default(value=section.permalink | default(value=config.base_url)) %}
+          {% set current_path = current_permalink | replace(from=config.base_url, to='') %}
           {% if lang == "fr" %}
-            <a href="{{ pfx | replace(from=config.base_url ~ '/fr', to=config.base_url) }}{{ page.path | default(value=section.path | default(value='/')) | replace(from='/fr/', to='/') }}">EN</a>
+            <a href="{{ current_path | replace(from='/fr/', to='/') | safe }}">EN</a>
             <span>|</span>
             <strong>FR</strong>
           {% else %}
             <strong>EN</strong>
             <span>|</span>
-            <a href="{{ config.base_url }}/fr{{ page.path | default(value=section.path | default(value='/')) }}">FR</a>
+            <a href="/fr/{{ current_path | trim_start_matches(pat='/') | safe }}">FR</a>
           {% endif %}
         {% endblock lang_switcher %}
       </div>
