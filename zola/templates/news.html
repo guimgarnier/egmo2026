@@ -28,7 +28,13 @@
           {% if post.extra.image is defined %}
           <div class="post-img position-relative overflow-hidden">
             <img src="{{ get_url(path=post.extra.image) }}" class="img-fluid" alt="">
-            {% if post.date %}<span class="post-date">{{ post.date | date(format="%B %e, %Y") }}</span>{% endif %}
+            {% if post.date %}
+            {% if lang == "fr" %}
+            <span class="post-date">{{ post.date | date(format="%e %B %Y", locale="fr_FR") }}</span>
+            {% else %}
+            <span class="post-date">{{ post.date | date(format="%B %e, %Y", locale="en_US") }}</span>
+            {% endif %}
+            {% endif %}
           </div>
           {% endif %}
           <div class="post-content d-flex flex-column">
