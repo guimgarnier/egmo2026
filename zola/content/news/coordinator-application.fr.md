@@ -2,10 +2,10 @@
 title = "Coordinator application is open!"
 date = 2025-04-30
 description = "Coordinators play a crucial role in ensuring a fair EGMO for all contestants!"
-
 [extra]
 author = "Edwige Cyffers"
 image = "assets/img/logo.png"
+read_more = true
 +++
 
 {% content_section(title="How to apply") %}

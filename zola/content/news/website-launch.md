@@ -6,6 +6,7 @@ description = "In these pages, you will find general information about the conte
 [extra]
 author = "Aline Cahuzac"
 image = "assets/img/logo.png"
+read_more = false
 +++
 
 In these pages, you will find general information about the contest, the organization, how to contact us or even [help us](/organization/sponsors/). Details about accommodation or the program will be added soon, and during the contest, this will be the place to find our pictures and media gallery.

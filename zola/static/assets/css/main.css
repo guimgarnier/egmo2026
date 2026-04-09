@@ -2785,25 +2785,55 @@ section,
 }
 /* ===== Regulations nested numbering ===== */
 ol.regulations {
-  counter-reset: section;
+  counter-reset: parent-counter;
   list-style: none;
   padding-left: 0;
 }
 ol.regulations > li {
-  counter-increment: section;
+  counter-increment: parent-counter;
 }
 ol.regulations > li > ol {
-  counter-reset: subsection;
+  counter-reset: child-counter;
   list-style: none;
   padding-left: 1.5em;
 }
 ol.regulations > li > ol > li {
-  counter-increment: subsection;
+  counter-increment: child-counter;
 }
-ol.regulations > li > ol > li::before {
-  content: counter(section) "." counter(subsection) ". ";
-  font-weight: 600;
-  margin-right: 0.3em;
+ol.regulations > li::marker {
+  content: counter(parent-counter) ". ";
+}
+ol.regulations > li > ol > li::marker {
+  content: counter(parent-counter) "." counter(child-counter) ". ";
+}
+
+/* ===== Regulations annex (A.1, A.2) numbering ===== */
+ol.regulations-annex {
+  counter-reset: parent-counter-annex;
+  list-style: none;
+  padding-left: 0;
+}
+ol.regulations-annex > li {
+  counter-increment: parent-counter-annex;
+}
+ol.regulations-annex > li > ol {
+  counter-reset: child-counter-annex;
+  list-style: none;
+  padding-left: 1.5em;
+}
+ol.regulations-annex > li > ol > li {
+  counter-increment: child-counter-annex;
+}
+ol.regulations-annex > li::marker {
+  content: counter(parent-counter-annex, upper-alpha) ". ";
+}
+ol.regulations-annex > li > ol > li::marker {
+  content: counter(parent-counter-annex, upper-alpha) "." counter(child-counter-annex) ". ";
+}
+
+li {
+  text-align: left;
+  padding-bottom: 10px;
 }
 
 /* ===== Header: gap between social links and lang switcher ===== */

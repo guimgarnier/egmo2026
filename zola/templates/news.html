@@ -40,10 +40,14 @@
               </div>
             </div>
             {% endif %}
+            {% if post.extra.read_more is defined and not post.extra.read_more %}
+            {{ post.content | safe }}
+            {% else %}
             {% if post.description %}
             <p>{{ post.description }}</p>
             {% endif %}
             <p><a href="{{ post.permalink }}"><strong>Read more</strong></a></p>
+            {% endif %}
           </div>
         </article>
       </div>
