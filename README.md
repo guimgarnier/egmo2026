@@ -472,43 +472,6 @@ A single sponsor logo linking to their website.
 
 ---
 
-### Regulations
-
-#### `regulations`
-Numbered list of regulation sections with hierarchical numbering (1, 1.1, 1.2…).
-
-```
-{% regulations() %}
-<li>
-  <h4>Section Title</h4>
-  <ol>
-    <li>First sub-item.</li>
-    <li>Second sub-item.</li>
-  </ol>
-</li>
-{% end %}
-```
-
-**The body must be raw HTML** (`<li>` tags), not Markdown. The shortcode uses `body | safe`. Numbering is handled entirely by CSS counters (see `ol.regulations` in `main.css`).
-
----
-
-#### `regulations_annex`
-Same as `regulations` but uses alphabetic numbering (A, A.1, A.2…). Used for the Annual Regulations annex.
-
-```
-{% regulations_annex() %}
-<li>
-  <h4>Annual Regulations</h4>
-  <ol>
-    <li>First item.</li>
-  </ol>
-</li>
-{% end %}
-```
-
----
-
 ### Schedule
 
 #### `schedule_en` / `schedule_fr`
@@ -550,12 +513,6 @@ read_more = false
 ### Multilingual news
 
 Create both `article.md` and `article.fr.md`. If only one language exists, that article only appears in that language's news listing.
-
-### Date format
-
-Dates are localized automatically in `news.html`:
-- English: "December 14, 2025"
-- French: "14 décembre 2025"
 
 ---
 
@@ -685,6 +642,6 @@ If you add a new top-level page or section that should appear in the navigation:
 zola build
 ```
 
-Upload the contents of `public/` to the web server. The `public/` directory is completely regenerated each time — there is no incremental build.
+Upload the contents of `public/` to the web server. The `public/` directory is completely regenerated each time, there is no incremental build.
 
 The `public/` directory is gitignored. Never commit it.
