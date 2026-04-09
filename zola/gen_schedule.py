@@ -1,6 +1,12 @@
+"""
+Generate schedule shortcode files for Zola from a CSV timetable.
+
+Usage:
+    uv run gen_schedule.py ~/Downloads/EGMO\ EdT/Détail-Table\ 1.csv
+"""
+
 import csv
 import sys
-import re
 from collections import defaultdict
 from pathlib import Path
 
@@ -24,22 +30,21 @@ GROUPS = {
 
 GROUP_NAMES_EN = {
     "Équipes": "Contestants",
-    "Deputy leaders": "Deputy leaders", 
-    "Leaders": "Leaders", 
-    "Guides": "Guides", 
-    "Coordinateurs": "Coordinators", 
+    "Deputy leaders": "Deputy leaders",
+    "Leaders": "Leaders",
+    "Guides": "Guides",
+    "Coordinateurs": "Coordinators",
 }
 
 GROUP_NAMES_FR = {
     "Équipes": "Équipes",
-    "Deputy leaders": "Chefs d'équipe adjoints", 
-    "Leaders": "Chefs d'équipe", 
-    "Guides": "Guides", 
-    "Coordinateurs": "Coordinateurs", 
+    "Deputy leaders": "Chefs d'équipe adjoints",
+    "Leaders": "Chefs d'équipe",
+    "Guides": "Guides",
+    "Coordinateurs": "Coordinateurs",
 }
 
-MARKER_START = "<!-- ======= Calendar Section ======= -->"
-MARKER_END   = "<!-- End Calendar Section -->"
+SHORTCODES = Path(__file__).parent / "templates/shortcodes"
 
 
 def escape(s):
@@ -58,7 +63,6 @@ def read_csv(path):
 def build_days(rows):
     days = defaultdict(list)
     for row in rows:
-        # Only include rows that have a faketime value
         if not row.get("faketime", "").strip():
             continue
         day = row.get("Jour", "").lower().strip()
@@ -152,7 +156,6 @@ def render_html(days, lang):
         tab_panes.append(render_tab_pane(grp, tab_id, days, lang, first=(idx == 0)))
 
     lines = [
-        MARKER_START,
         '<section id="calendar" class="calendar section light-background">',
         '  <div class="container section-title" data-aos="fade-up">',
         f'    <h2>{title}</h2>',
@@ -168,33 +171,20 @@ def render_html(days, lang):
         '    </div>',
         '  </div>',
         '</section>',
-        MARKER_END,
     ]
     return "\n".join(lines)
 
 
-def inject_into_file(html_path, new_block):
-    content = Path(html_path).read_text(encoding="utf-8")
-    pattern = re.compile(
-        re.escape(MARKER_START) + r".*?" + re.escape(MARKER_END),
-        re.DOTALL
-    )
-    if not pattern.search(content):
-        raise ValueError(f"Markers not found in {html_path}")
-    updated = pattern.sub(new_block, content)
-    Path(html_path).write_text(updated, encoding="utf-8")
-    print(f"Updated: {html_path}")
-
-
 def main():
-    base = Path(__file__).parent
-    csv_path = sys.argv[1] if len(sys.argv) > 1 else base / "schedule.csv"
-
+    csv_path = sys.argv[1] if len(sys.argv) > 1 else Path(__file__).parent / "schedule.csv"
     rows = read_csv(csv_path)
     days = build_days(rows)
 
-    inject_into_file(base / "agenda.html",    render_html(days, lang="en"))
-    inject_into_file(base / "agenda_fr.html", render_html(days, lang="fr"))
+    for lang, fname in [("en", "schedule_en.html"), ("fr", "schedule_fr.html")]:
+        html = render_html(days, lang=lang)
+        out = SHORTCODES / fname
+        out.write_text(html + "\n", encoding="utf-8")
+        print(f"Written: {out}")
 
 
 if __name__ == "__main__":
