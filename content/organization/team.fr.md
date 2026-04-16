@@ -24,7 +24,6 @@ L'organisation locale de l'EGMO 2026 est devenue une action d'Animath à part en
 {{ team_member(name="Maéna Quemener", photo="assets/img/team/maena.jpg", role="Cheffe coordinatrice") }}
 {{ team_member(name="Théo Lenoir", photo="assets/img/team/theo.jpg", role="Président du comité de sélection des problèmes") }}
 {{ team_member(name="Dominik Stantejsky", photo="assets/img/team/dominik.jpg", role="Coordinateur arrivées, départs et voyages") }}
-{{ team_member(name="Louisa Tachard", photo="assets/img/team/louisa.jpeg", role="Responsable des cérémonies officielles") }}
 {{ team_member(name="Cynthia Filipe", photo="assets/img/team/cynthia.jpg", role="Responsable communication et médias") }}
 {{ team_member(name="Alain Delaët", photo="assets/img/team/alain.jpeg", role="Webmaster and Responsable Q&A") }}
 

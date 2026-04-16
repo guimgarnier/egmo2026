@@ -1,6 +1,8 @@
 """
 Generate schedule shortcode files for Zola from a CSV timetable.
 
+No external dependencies. Tested with Python 3.13.3.
+
 Usage:
     uv run gen_schedule.py ~/Downloads/EGMO\ EdT/Détail-Table\ 1.csv
 """

@@ -24,7 +24,6 @@ The local organization of EGMO 2026 has now become an action of Animath in itsel
 {{ team_member(name="Maéna Quemener", photo="assets/img/team/maena.jpg", role="Chief coordinator") }}
 {{ team_member(name="Théo Lenoir", photo="assets/img/team/theo.jpg", role="Problem selection committee chair") }}
 {{ team_member(name="Dominik Stantejsky", photo="assets/img/team/dominik.jpg", role="Arrivals, departures and travel coordinator") }}
-{{ team_member(name="Louisa Tachard", photo="assets/img/team/louisa.jpeg", role="Official ceremonies manager") }}
 {{ team_member(name="Cynthia Filipe", photo="assets/img/team/cynthia.jpg", role="Communications and media manager") }}
-{{ team_member(name="Alain Delaët", photo="assets/img/team/alain.jpeg", role="Webmaster and Q&A manager") }}
+{{ team_member(name="Alain Delaët", photo="assets/img/team/alain.jpeg", role="Webmaster") }}
 {% end %}
