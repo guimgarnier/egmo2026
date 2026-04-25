@@ -4,7 +4,7 @@ date = 2026-04-13
 description = "Day 3 at EGMO 2026 was filled with focus, energy, and shared moments. Including two special events offered by Jane Street."
 
 [extra]
-author = "Cynthia Filipe"
+author = "Cynthia Filipe & Alain Delaët"
 image = "assets/img/logo.png"
 read_more = true
 +++

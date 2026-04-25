@@ -4,7 +4,7 @@ date = 2026-04-16
 description = "Un immense merci à toutes les participantes, les encadrants, les bénévoles et les partenaires qui ont rendu cette semaine si spéciale."
 
 [extra]
-author = "Cynthia Filipe"
+author = "Cynthia Filipe & Alain Delaët"
 image = "assets/img/logo.png"
 read_more = true
 +++

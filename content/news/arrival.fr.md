@@ -4,7 +4,7 @@ date = 2026-04-09
 description = "Toutes les équipes sont arrivées aujourd'hui à Bordeaux, ont rencontré plusieurs de nos partenaires et ont partagé leurs premiers moments ensemble."
 
 [extra]
-author = "Cynthia Filipe"
+author = "Cynthia Filipe & Alain Delaët"
 image = "assets/img/Bordeaux_port_de_la_lune_01.jpg"
 read_more = true
 +++

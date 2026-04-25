@@ -4,7 +4,7 @@ date = 2026-04-13
 description = "After the second morning of exams, the participants enjoyed a well‑deserved break with a mix of creative, fun, and relaxing activities."
 
 [extra]
-author = "Cynthia Filipe"
+author = "Cynthia Filipe & Alain Delaët"
 image = "assets/img/croisiere.jpg"
 read_more = true
 +++

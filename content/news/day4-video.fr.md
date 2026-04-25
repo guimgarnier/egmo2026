@@ -4,7 +4,7 @@ date = 2026-04-14
 description = "Le Jour 4 de l'EGMO 2026 a été marqué par découvertes, échanges et travail essentiel en coulisses."
 
 [extra]
-author = "Cynthia Filipe"
+author = "Cynthia Filipe & Alain Delaët"
 image = "assets/img/saint-emilion-village.jpg"
 read_more = true
 +++

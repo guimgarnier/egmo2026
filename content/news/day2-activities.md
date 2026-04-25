@@ -4,7 +4,7 @@ date = 2026-04-12
 description = "After a focused exam session, the participants enjoyed a well‑deserved break with a variety of afternoon activities."
 
 [extra]
-author = "Cynthia Filipe"
+author = "Cynthia Filipe & Alain Delaët"
 image = "assets/img/BassinDesLumieres-petitPrince.jpg"
 read_more = true
 +++

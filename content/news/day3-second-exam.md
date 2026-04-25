@@ -4,7 +4,7 @@ date = 2026-04-13
 description = "Day 3 began with the second exam session: another morning of deep focus, tackling 3 new problems in 4h30."
 
 [extra]
-author = "Cynthia Filipe"
+author = "Cynthia Filipe & Alain Delaët"
 image = "assets/img/credit_UB_2.jpg"
 read_more = true
 +++

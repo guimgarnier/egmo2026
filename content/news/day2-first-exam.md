@@ -4,7 +4,7 @@ date = 2026-04-12
 description = "Yesterday morning, the participants sat for the first exam session at the University of Bordeaux: 3 problems, 4h30."
 
 [extra]
-author = "Cynthia Filipe"
+author = "Cynthia Filipe & Alain Delaët"
 image = "assets/img/credit_UB.jpg"
 read_more = true
 +++

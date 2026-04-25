@@ -4,7 +4,7 @@ date = 2026-04-12
 description = "Jour 2 : concentration, créativité et découvertes: voici le récap vidéo."
 
 [extra]
-author = "Cynthia Filipe"
+author = "Cynthia Filipe & Alain Delaët"
 image = "assets/img/logo.png"
 read_more = true
 +++

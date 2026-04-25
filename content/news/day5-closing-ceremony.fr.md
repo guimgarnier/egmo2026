@@ -4,7 +4,7 @@ date = 2026-04-15
 description = "La cérémonie de clôture de l'EGMO 2026 a été un moment d'émotion, de célébration et d'inspiration."
 
 [extra]
-author = "Cynthia Filipe"
+author = "Cynthia Filipe & Alain Delaët"
 image = "assets/img/logo.png"
 read_more = true
 +++

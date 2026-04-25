@@ -4,7 +4,7 @@ date = 2026-04-11
 description = "From the lively treasure hunt through Bordeaux to the inspiring opening ceremony — here's a short recap of Day 1 highlights."
 
 [extra]
-author = "Cynthia Filipe"
+author = "Cynthia Filipe & Alain Delaët"
 image = "assets/img/logo.png"
 read_more = true
 +++

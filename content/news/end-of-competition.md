@@ -4,7 +4,7 @@ date = 2026-04-16
 description = "A heartfelt thank-you to all participants, team leaders, volunteers, and partners who made this week so special."
 
 [extra]
-author = "Cynthia Filipe"
+author = "Cynthia Filipe & Alain Delaët"
 image = "assets/img/logo.png"
 read_more = true
 +++

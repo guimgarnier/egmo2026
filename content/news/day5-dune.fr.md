@@ -4,7 +4,7 @@ date = 2026-04-15
 description = "Pour leur dernière journée officielle à l'EGMO 2026, les participantes ont profité d'une matinée incroyable à la Dune du Pilat."
 
 [extra]
-author = "Cynthia Filipe"
+author = "Cynthia Filipe & Alain Delaët"
 image = "assets/img/dune-du-Pilat.jpg"
 read_more = true
 +++

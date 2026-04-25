@@ -4,7 +4,7 @@ date = 2026-04-12
 description = "Hier matin, les participantes ont passé leur première matinée d'examen à l'Université de Bordeaux, campus de Talence : 3 problèmes en 4h30."
 
 [extra]
-author = "Cynthia Filipe"
+author = "Cynthia Filipe & Alain Delaët"
 image = "assets/img/credit_UB.jpg"
 read_more = true
 +++

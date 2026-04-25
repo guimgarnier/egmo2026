@@ -4,7 +4,7 @@ date = 2026-04-13
 description = "Après la deuxième matinée d'examen, les participantes ont profité d'un moment de détente avec un mélange d'activités créatives, fun et ressourçantes."
 
 [extra]
-author = "Cynthia Filipe"
+author = "Cynthia Filipe & Alain Delaët"
 image = "assets/img/croisiere.jpg"
 read_more = true
 +++

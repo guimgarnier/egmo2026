@@ -4,7 +4,7 @@ date = 2026-04-14
 description = "To end Day 4, the contestants took part in an inspiring speed-meeting with professionals from various fields."
 
 [extra]
-author = "Cynthia Filipe"
+author = "Cynthia Filipe & Alain Delaët"
 image = "assets/img/logo.png"
 read_more = true
 +++

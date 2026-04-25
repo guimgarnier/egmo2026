@@ -4,7 +4,7 @@ date = 2026-04-11
 description = "De la chasse au trésor dans les rues de Bordeaux à la cérémonie d'inauguration — voici un petit récap des moments forts du Jour 1."
 
 [extra]
-author = "Cynthia Filipe"
+author = "Cynthia Filipe & Alain Delaët"
 image = "assets/img/logo.png"
 read_more = true
 +++

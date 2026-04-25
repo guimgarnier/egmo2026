@@ -4,7 +4,7 @@ date = 2026-04-11
 description = "Les équipes ont commencé leur journée par une chasse au trésor dans les rues de Bordeaux: des énigmes, un esprit d'équipe et beaucoup de sourires !"
 
 [extra]
-author = "Cynthia Filipe"
+author = "Cynthia Filipe & Alain Delaët"
 image = "assets/img/bordeaux-rue.jpg"
 read_more = true
 +++

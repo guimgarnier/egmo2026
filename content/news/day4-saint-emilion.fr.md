@@ -4,7 +4,7 @@ date = 2026-04-14
 description = "Le Jour 4 s'est déroulé en deux temps: les participantes ont exploré Saint-Émilion pendant que les leaders assuraient la coordination des copies."
 
 [extra]
-author = "Cynthia Filipe"
+author = "Cynthia Filipe & Alain Delaët"
 image = "assets/img/Saint-Emilion.jpg"
 read_more = true
 +++

@@ -4,7 +4,7 @@ date = 2026-04-12
 description = "Day 2 at EGMO 2026 was full of focus, creativity, and discovery. Here's the video recap."
 
 [extra]
-author = "Cynthia Filipe"
+author = "Cynthia Filipe & Alain Delaët"
 image = "assets/img/logo.png"
 read_more = true
 +++

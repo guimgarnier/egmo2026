@@ -4,7 +4,7 @@ date = 2026-04-09
 description = "All the teams arrived in Bordeaux today, met several of our partners, and enjoyed their first moments together."
 
 [extra]
-author = "Cynthia Filipe"
+author = "Cynthia Filipe & Alain Delaët"
 image = "assets/img/Bordeaux_port_de_la_lune_01.jpg"
 read_more = true
 +++

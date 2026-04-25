@@ -4,7 +4,7 @@ date = 2026-04-15
 description = "A spectacular final day: the Dune du Pilat, the closing ceremony, and an inspiring message from Mura Yakerson."
 
 [extra]
-author = "Cynthia Filipe"
+author = "Cynthia Filipe & Alain Delaët"
 image = "assets/img/dune-1.png"
 read_more = true
 +++

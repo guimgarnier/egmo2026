@@ -4,7 +4,7 @@ date = 2026-04-14
 description = "Day 4 at EGMO 2026 was full of discoveries, exchanges, and essential work behind the scenes."
 
 [extra]
-author = "Cynthia Filipe"
+author = "Cynthia Filipe & Alain Delaët"
 image = "assets/img/saint-emilion-village.jpg"
 read_more = true
 +++

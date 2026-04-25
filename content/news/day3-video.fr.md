@@ -4,7 +4,7 @@ date = 2026-04-13
 description = "Un troisième jour intense et rempli de beaux moments partagés avec deux temps forts offerts par Jane Street."
 
 [extra]
-author = "Cynthia Filipe"
+author = "Cynthia Filipe & Alain Delaët"
 image = "assets/img/logo.png"
 read_more = true
 +++

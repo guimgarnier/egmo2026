@@ -4,7 +4,7 @@ date = 2026-04-11
 description = "EGMO 2026 officially started with an inspiring inauguration ceremony in Bordeaux."
 
 [extra]
-author = "Cynthia Filipe"
+author = "Cynthia Filipe & Alain Delaët"
 image = "assets/img/logo.png"
 read_more = true
 +++

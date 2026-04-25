@@ -4,7 +4,7 @@ date = 2026-04-14
 description = "Day 4 took two different paths: the participants explored Saint-Émilion while team leaders focused on exam coordination."
 
 [extra]
-author = "Cynthia Filipe"
+author = "Cynthia Filipe & Alain Delaët"
 image = "assets/img/Saint-Emilion.jpg"
 read_more = true
 +++

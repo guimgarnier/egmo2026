@@ -4,7 +4,7 @@ date = 2026-04-11
 description = "The teams kicked off their day with a treasure hunt through the streets of Bordeaux — riddles, teamwork, and lots of smiles!"
 
 [extra]
-author = "Cynthia Filipe"
+author = "Cynthia Filipe & Alain Delaët"
 image = "assets/img/bordeaux-rue.jpg"
 read_more = true
 +++

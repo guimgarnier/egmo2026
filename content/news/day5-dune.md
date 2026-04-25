@@ -4,7 +4,7 @@ date = 2026-04-15
 description = "For their last official day at EGMO 2026, the participants enjoyed a breathtaking morning at the Dune du Pilat."
 
 [extra]
-author = "Cynthia Filipe"
+author = "Cynthia Filipe & Alain Delaët"
 image = "assets/img/dune-du-Pilat.jpg"
 read_more = true
 +++

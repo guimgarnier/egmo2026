@@ -4,7 +4,7 @@ date = 2026-04-12
 description = "Après une matinée d'examen bien concentrée, les participantes ont profité d'un moment de détente grâce à plusieurs activités au choix."
 
 [extra]
-author = "Cynthia Filipe"
+author = "Cynthia Filipe & Alain Delaët"
 image = "assets/img/BassinDesLumieres-petitPrince.jpg"
 read_more = true
 +++
