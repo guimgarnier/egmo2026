@@ -15,4 +15,6 @@ Day 4 at EGMO 2026 took two different paths — each with its own rhythm and pur
 The participants spent the day exploring the beautiful medieval town of Saint‑Émilion, discovering its streets, history, and unique atmosphere.
 
 Meanwhile, the team leaders stayed at the hotel for an essential part of the competition: coordination and marking of the exam!
+
+{{ photo_grid(i1="/assets/img/com/day5-day/DSC_4997.jpg", i2="/assets/img/com/day5-day/DSC_5001.jpg", i3="/assets/img/com/day5-day/DSC_5150.jpg", i4="/assets/img/com/day5-day/DSC_5220.jpg", i5="/assets/img/com/day5-day/DSC_5400.jpg") }}
 {% end %}

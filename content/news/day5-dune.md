@@ -13,4 +13,6 @@ read_more = true
 For their last official day at EGMO 2026 in Bordeaux, the participants enjoyed a breathtaking morning at the Dune du Pilat.
 
 A moment to take in the stunning views, relax together, and make the most of their final day before the closing events.
+
+{{ photo_grid(i1="/assets/img/com/day6-pilat/DSC_5576.jpg", i2="/assets/img/com/day6-pilat/DSC_5678.jpg", i3="/assets/img/com/day6-pilat/DSC_5778.jpg", i4="/assets/img/com/day6-pilat/45e256fa-3f6f-4353-b3b8-8385715fe379.JPG", i5="/assets/img/com/day6-pilat/8dd9ec4f-8d16-4f01-9898-79a238270af5.JPG") }}
 {% end %}
