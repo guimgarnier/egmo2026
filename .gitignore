@@ -1,3 +1,4 @@
 public/
 .claude/
 __pycache__/
+static/processed_images/
