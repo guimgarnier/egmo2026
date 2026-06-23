@@ -1090,6 +1090,23 @@ section,
 }
 
 /*--------------------------------------------------------------
+# About Section (left image variant)
+--------------------------------------------------------------*/
+@media (min-width: 992px) {
+  .about.about-left .about-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    min-height: 600px;
+  }
+  .about.about-left .our-story {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+/*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
 .services .service-item {

@@ -1,0 +1,15 @@
+<section class="about about-left section">
+  <div class="container">
+    <div class="row position-relative">
+      <div class="col-lg-7 offset-lg-5" data-aos="fade-up" data-aos-delay="100">
+        {% if title is defined %}<h2 class="inner-title">{{ title }}</h2>{% endif %}
+        <div class="our-story">
+          {{ body | markdown | safe }}
+        </div>
+      </div>
+      <div class="col-lg-5 about-img" data-aos="zoom-out" data-aos-delay="200">
+        <div><img src="{{ img_src }}" {% if img_width is defined %}width="{{ img_width }}"{% endif %} alt="{{ img_alt | default(value='') }}"></div>
+      </div>
+    </div>
+  </div>
+</section>
