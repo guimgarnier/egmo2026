@@ -1,10 +1,10 @@
 <div class="text-center py-4" data-aos="zoom-out" data-aos-delay="200">
   {% set h = height | default(value=300) %}
-  {% if i1 is defined %}<img src="{{ i1 }}" alt="{{ a1 | default(value='') }}" height="{{ h }}" class="mx-3 my-2">{% endif %}
-  {% if i2 is defined %}<img src="{{ i2 }}" alt="{{ a2 | default(value='') }}" height="{{ h }}" class="mx-3 my-2">{% endif %}
-  {% if i3 is defined %}<img src="{{ i3 }}" alt="{{ a3 | default(value='') }}" height="{{ h }}" class="mx-3 my-2">{% endif %}
-  {% if i4 is defined %}<img src="{{ i4 }}" alt="{{ a4 | default(value='') }}" height="{{ h }}" class="mx-3 my-2">{% endif %}
-  {% if i5 is defined %}<img src="{{ i5 }}" alt="{{ a5 | default(value='') }}" height="{{ h }}" class="mx-3 my-2">{% endif %}
-  {% if i6 is defined %}<img src="{{ i6 }}" alt="{{ a6 | default(value='') }}" height="{{ h }}" class="mx-3 my-2">{% endif %}
-  {% if i7 is defined %}<img src="{{ i7 }}" alt="{{ a7 | default(value='') }}" height="{{ h }}" class="mx-3 my-2">{% endif %}
+  {% if i1 is defined %}{% set r = resize_image(path=i1 | trim_start_matches(pat="/"), width=600, op="fit_width", format="webp", quality=80) %}<img src="{{ r.url }}" alt="{{ a1 | default(value='') }}" height="{{ h }}" class="mx-3 my-2" loading="lazy">{% endif %}
+  {% if i2 is defined %}{% set r = resize_image(path=i2 | trim_start_matches(pat="/"), width=600, op="fit_width", format="webp", quality=80) %}<img src="{{ r.url }}" alt="{{ a2 | default(value='') }}" height="{{ h }}" class="mx-3 my-2" loading="lazy">{% endif %}
+  {% if i3 is defined %}{% set r = resize_image(path=i3 | trim_start_matches(pat="/"), width=600, op="fit_width", format="webp", quality=80) %}<img src="{{ r.url }}" alt="{{ a3 | default(value='') }}" height="{{ h }}" class="mx-3 my-2" loading="lazy">{% endif %}
+  {% if i4 is defined %}{% set r = resize_image(path=i4 | trim_start_matches(pat="/"), width=600, op="fit_width", format="webp", quality=80) %}<img src="{{ r.url }}" alt="{{ a4 | default(value='') }}" height="{{ h }}" class="mx-3 my-2" loading="lazy">{% endif %}
+  {% if i5 is defined %}{% set r = resize_image(path=i5 | trim_start_matches(pat="/"), width=600, op="fit_width", format="webp", quality=80) %}<img src="{{ r.url }}" alt="{{ a5 | default(value='') }}" height="{{ h }}" class="mx-3 my-2" loading="lazy">{% endif %}
+  {% if i6 is defined %}{% set r = resize_image(path=i6 | trim_start_matches(pat="/"), width=600, op="fit_width", format="webp", quality=80) %}<img src="{{ r.url }}" alt="{{ a6 | default(value='') }}" height="{{ h }}" class="mx-3 my-2" loading="lazy">{% endif %}
+  {% if i7 is defined %}{% set r = resize_image(path=i7 | trim_start_matches(pat="/"), width=600, op="fit_width", format="webp", quality=80) %}<img src="{{ r.url }}" alt="{{ a7 | default(value='') }}" height="{{ h }}" class="mx-3 my-2" loading="lazy">{% endif %}
 </div>

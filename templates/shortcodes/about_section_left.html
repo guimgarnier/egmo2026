@@ -8,7 +8,8 @@
         </div>
       </div>
       <div class="col-lg-5 about-img" data-aos="zoom-out" data-aos-delay="200">
-        <div><img src="{{ img_src }}" {% if img_width is defined %}width="{{ img_width }}"{% endif %} alt="{{ img_alt | default(value='') }}"></div>
+        {% set r = resize_image(path=img_src | trim_start_matches(pat="/"), width=1200, op="fit_width", format="webp", quality=80) %}
+        <div><img src="{{ r.url }}" {% if img_width is defined %}width="{{ img_width }}"{% endif %} alt="{{ img_alt | default(value='') }}" loading="lazy"></div>
       </div>
     </div>
   </div>
