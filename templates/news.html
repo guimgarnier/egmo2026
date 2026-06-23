@@ -24,7 +24,7 @@
     <div class="row gy-4">
       {% for post in section.pages %}
       <div class="col-lg-4">
-        <article class="position-relative h-100">
+        <article class="position-relative h-100" onclick="window.location='{{ post.permalink | safe }}'" style="cursor: pointer;">
           {% if post.extra.image is defined %}
           <div class="post-img position-relative overflow-hidden">
             <img src="{{ get_url(path=post.extra.image) }}" class="img-fluid" alt="">
