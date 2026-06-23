@@ -19,9 +19,9 @@ Alors que l'**[Olympiade Internationale de Mathématiques](https://www.imo-offic
 
 ### 15e édition
 
-L'EGMO 2026 sera accueillie à Bordeaux, en France, par **[Animath](https://www.animath.fr/)** et l'**[Université de Bordeaux](https://www.u-bordeaux.fr/)**, du jeudi 9 avril au mercredi 15 avril. La France participe activement à l'EGMO depuis 2013, mais n'a organisé dans toute son histoire qu'une seule olympiade internationale : l'OIM 1983, à Paris (32 délégations, moins de 200 concurrents). L'EGMO 2026 sera donc la deuxième, et de loin la plus grande, olympiade internationale jamais organisée dans notre pays ; ce sera aussi la première depuis plus de 40 ans.
+L'EGMO 2026 a été accueillie à Bordeaux, en France, par **[Animath](https://www.animath.fr/)** et l'**[Université de Bordeaux](https://www.u-bordeaux.fr/)**, du jeudi 9 avril au mercredi 15 avril. La France participait activement à l'EGMO depuis 2013, mais n'avait organisé dans toute son histoire qu'une seule olympiade internationale : l'OIM 1983, à Paris (32 délégations, moins de 200 concurrents). L'EGMO 2026 était donc la deuxième, et de loin la plus grande, olympiade internationale jamais organisée dans notre pays ; et la première depuis plus de 40 ans.
 
-Nous sommes d'autant plus heureux d'accueillir cette 15e édition dans la belle ville côtière de Bordeaux, et espérons en faire une expérience inoubliable pour tous.
+Nous avons été ravis d'accueillir cette 15e édition dans la belle ville de Bordeaux, et espérons qu'elle a été une expérience inoubliable pour tous.
 
 {{ youtube(id="NzezrXjpmKI") }}
 

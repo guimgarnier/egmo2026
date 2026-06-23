@@ -19,9 +19,9 @@ Whereas the **[International Mathematical Olympiad](https://www.imo-official.org
 
 ### 15th edition
 
-EGMO 2026 will be hosted in Bordeaux, France, by **[Animath](https://www.animath.fr/)** and the **[University of Bordeaux](https://www.u-bordeaux.fr/en/)**, from Thursday, April 9th to Wednesday, April 15th. France has been an active participant in EGMO since 2013, but has only hosted in all its history one single international olympiad: IMO 1983, in Paris (32 delegations, just under 200 contestants). EGMO 2026 will therefore be the second, and by far the largest, international olympiad ever organized in our country; it will also be the first in over 40 years.
+EGMO 2026 was hosted in Bordeaux, France, by **[Animath](https://www.animath.fr/)** and the **[University of Bordeaux](https://www.u-bordeaux.fr/en/)**, from Thursday, April 9th to Wednesday, April 15th. France had been an active participant in EGMO since 2013, but had only hosted in all its history one single international olympiad: IMO 1983, in Paris (32 delegations, just under 200 contestants). EGMO 2026 was therefore the second, and by far the largest, international olympiad ever organized in our country; and the first in over 40 years.
 
-We are all the more delighted to welcome this 15th edition in the beautiful seaside city of Bordeaux, and hope to make it an unforgettable experience for everyone.
+We were delighted to welcome this 15th edition in the beautiful city of Bordeaux, and hope it was an unforgettable experience for everyone.
 
 {{ youtube(id="NzezrXjpmKI") }}
 
