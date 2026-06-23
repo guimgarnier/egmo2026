@@ -3,7 +3,7 @@ title = "EGMO 2026"
 template = "index.html"
 +++
 
-{% about_section(img_src="/assets/img/EGMO2022-Alice.jpg", img_width="600", img_alt="EGMO 2022", title="Bienvenue à l'EGMO 2026 !") %}
+{% about_section(img_src="/assets/img/EGMO2022-Alice.jpg", img_width="600", img_alt="EGMO 2022", title="Merci pour l'EGMO 2026 !") %}
 
 #### À propos de l'EGMO
 
@@ -24,5 +24,13 @@ L'EGMO 2026 sera accueillie à Bordeaux, en France, par **[Animath](https://www.
 Nous sommes d'autant plus heureux d'accueillir cette 15e édition dans la belle ville côtière de Bordeaux, et espérons en faire une expérience inoubliable pour tous.
 
 {{ youtube(id="NzezrXjpmKI") }}
+
+### L'EGMO 2026 est terminée !
+
+L'EGMO 2026 a pris fin. Cette édition a établi un nouveau record de participation : **67 équipes issues de 66 pays**, **260 concurrentes**, 590 participants au total. Trois pays participaient pour la première fois : l'Islande, le Nigéria et le Rwanda. Le score parfait a été obtenu par **Huaijin Lou**, et la **Roumanie** a remporté le prix du meilleur pays européen.
+
+Retrouvez le bilan complet dans notre **[rapport final](/news/final-report/)**.
+
+{{ youtube(id="U2uQQLTHHWA") }}
 
 {% end %}
