@@ -4,7 +4,7 @@ description = "15th European Girls' Mathematical Olympiad – Bordeaux, France, 
 default_language = "en"
 compile_sass = false
 generate_feeds = false
-minify_html = false
+minify_html = true
 
 [markdown]
 
